@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+seeds/
+logs/
+
+.user.yml
+profiles.yml
+package-lock.yml

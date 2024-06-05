@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: landing
+    database: dev
+    tables:
+      - name: distribution_centers
+      - name: events
+        freshness:
+          warn_after:
+            count: 12
+            period: hour
+          error_after:
+            count: 24
+            period: hour
+      - name: inventory_items
+      - name: order_items
+      - name: orders
+      - name: products
+      - name: users
